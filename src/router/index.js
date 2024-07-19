@@ -1,15 +1,29 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Header from '../components/Header.vue'
-import TelaPrincipal from '../components/TelaPrincipal.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '../components/Home.vue';
+import Login from '../components/Login.vue';
+import Register from '../components/Register.vue';
+import GameScreen from '../components/GameScreen.vue';
 
 const routes = [
-  { path: '/', component: TelaPrincipal }
-  // Adicione mais rotas conforme necessário
-]
+  { path: '/',
+     component: Home 
+    },
+  { path: '/login',
+     component: Login 
+    },
+  { path: '/register',
+    component: Register 
+  },
+  {
+    path: '/game',
+    name: 'GameScreen',
+    component: GameScreen,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;
