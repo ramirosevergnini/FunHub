@@ -109,19 +109,22 @@ export default {
 }
 
 .login-button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.login-button:hover {
-  background-color: #45a049;
-}
+    width: 108%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .login-button:hover {
+    background-color: #1100ff;
+    color: white;
+    border: 1px solid black;
+  }
 
 .register-link {
   margin-top: 20px;

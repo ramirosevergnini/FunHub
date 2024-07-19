@@ -109,18 +109,21 @@
   }
   
   .register-button {
-    width: 100%;
+    width: 108%;
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     cursor: pointer;
+    transition: 0.2s;
   }
   
   .register-button:hover {
-    background-color: #45a049;
+    background-color: #1100ff;
+    color: white;
+    border: 1px solid black;
   }
   
   .register-link {
